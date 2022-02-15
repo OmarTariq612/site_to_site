@@ -59,4 +59,4 @@ If you're having any issues connecting to the VPN server even though you're sure
 * DPI: https://en.wikipedia.org/wiki/Deep_packet_inspection
 * CG-NAT: https://www.sidn.nl/en/news-and-blogs/cgnat-frustrates-all-ip-address-based-technologies
 * WireGuard: https://www.wireguard.com/
-* Site to Site topolgy: https://www.procustodibus.com/blog/2020/12/wireguard-site-to-site-config/
+* Site to Site topology: https://www.procustodibus.com/blog/2020/12/wireguard-site-to-site-config/
