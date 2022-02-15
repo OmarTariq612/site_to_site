@@ -1,7 +1,7 @@
 # Site to Site topology (WireGuard)
-A Site to Site topology connects 2 (or more) netowrks together using VPN.
+A Site to Site topology connects 2 (or more) networks together using VPN.
 
-To achieve this, in most cases you can make this connection directly between the networks (with the help of `port forwarding`) but in some cases those network can be behind a Carrier-Grade NAT `CG-NAT`, this repo is here to help you in this situation.
+To achieve this, in most cases you can make this connection directly between the networks (with the help of `port forwarding`) but in some cases those networks can be behind a Carrier-Grade NAT `CG-NAT`, this repo is here to help you in this situation.
 
 At the end of this tutorial we will have 2 networks connected together.
 
