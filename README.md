@@ -36,13 +36,17 @@ We will use a VPS to run a VPN Server that is publicly accessible, then we can c
 * Install `WireGuard` on your machine.
 * Generate public and private keys using the same command (if you are using windows don't use `cmd` , use `powershell` instead to generate the keys).
 * Use `foo/wg0.conf` file as a template and copy it to `/etc/wireguard` (if you are using windows import the config file into the WireGuard application).
-* If `foo` is not the default gateway of its network then add a static route to the gateway (`R1` in the figure) to forward `192.168.1.0/24` (`site b` network address) packets to `foo`.
+* If `foo` is not the default gateway of its network then it's required to add static routes to the gateway (`R1` in the figure):
+  * to forward `192.168.1.0/24` (`site b` networkg address) packets to `foo`.
+  * to forward `10.8.0.0/24` (VPN network address) packets to `foo`.
 
 ## bar configuration (site b)
 * Install `WireGuard` on your machine.
 * Generate public and private keys using the same command (if you are using windows don't use `cmd` , use `powershell` instead to generate the keys).
 * Use `bar/wg0.conf` file as a template and copy it to `/etc/wireguard` (if you are using windows import the config file into the WireGuard application).
-* If `bar` is not the default gateway of its network then add a static route to the gateway (`R2` in the figure) to forward `192.168.0.0/24` (`site a` network address) packets to `bar`.
+* If `bar` is not the default gateway of its network then it's required to add static route to the gateway (`R2` in the figure):
+    * to forward `192.168.0.0/24` (`site a` network address) packets to `bar`.
+    * to forward `10.8.0.0/24` (VPN network address) packets to `bar`.
 
 ## Connection
 After configuring the machines you can now establish a connection using this command:
